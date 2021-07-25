@@ -21,6 +21,9 @@ nextBtn.addEventListener('click', (e) => {
         errorDiv.innerText = 'Error: Please enter the value appropriately.';
 
         amountDiv.classList.add('hidden');
+
+        countArray = countArray.map(num => 0);
+        showOutput();
     } else {
         bill = parseInt(billInput.value);
 
@@ -41,6 +44,9 @@ calculateBtn.addEventListener('click', (e) => {
         errorDiv.innerText = 'Error: Please enter the value appropriately.';
 
         amountDiv.classList.add('hidden');
+        
+        countArray = countArray.map(num => 0);
+        showOutput();
     } else {
         bill = parseInt(billInput.value);
         cash = parseInt(cashInput.value);
@@ -76,6 +82,7 @@ function calculateChange() {
     }
 
     showOutput();
+    amountDiv.classList.remove('hidden');
 }
 
 function showOutput() {
@@ -85,5 +92,4 @@ function showOutput() {
         tbody.rows[j+1].cells[1].innerHTML = countArray[j];
     }
     
-    amountDiv.classList.remove('hidden');
 }
