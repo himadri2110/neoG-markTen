@@ -20,7 +20,7 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1 {
+h1, .github {
     color: var(--primary);
     text-align: center;
     margin: 1rem;
@@ -105,12 +105,12 @@ td {
 
 footer {
     margin-top: 2rem;
-    height: 2rem;
-    line-height: 2rem;
+    height: 3rem;
+    line-height: 3rem;
     width: 100%;
     text-align: center;
 }
 
-footer a {
+footer a, .github a {
     color: var(--primary);
 }

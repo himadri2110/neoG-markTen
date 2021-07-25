@@ -85,6 +85,5 @@ function showOutput() {
         tbody.rows[j+1].cells[1].innerHTML = countArray[j];
     }
     
-    table.classList.remove('hidden');
     amountDiv.classList.remove('hidden');
 }
