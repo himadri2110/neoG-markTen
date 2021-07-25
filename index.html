@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Cash Register</title>
+</head>
+
+<body>
+   
+	<h1>Cash Register</h1>
+
+    <main>
+		<h2>How does it work? </h2>
+
+		<br>
+
+		<ul class="details">
+			<li>
+				Enter the bill amount and the cash paid by your customer.
+			</li> 
+			<li>
+				We will tell you the amount and the minimum number of notes to be returned to your customer.
+			</li> 
+			<li>
+				Available currencies: Rs. 1, 5, 10, 20, 100, 500, 2000.  
+			</li>
+		</ul>
+
+		<br>
+
+		<div class="wrapper">
+			<div>
+				<h3>Enter the bill amount</h3>
+				<input type="number" id="bill" />
+			</div>
+		
+			<button id="next">Next</button>
+		
+			<div class="cashDiv">
+				<h3>Enter the cash given</h3>
+				<input type="number" id="cash" />
+			</div>
+		
+			<button id="calculate">Calculate</button>
+		
+			<div class="error"></div>
+			
+			<br>
+	
+			<div class="hidden">
+				Amount to be returned: <strong><span class="amount"></span></strong>
+			</div>
+			
+			<br>
+		
+			<table>
+				<tbody>
+					<tr class="title">
+						<td>Note</td>
+						<td>No. of Note</td>
+					</tr>
+					<tr>
+						<td>2000</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>500</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>100</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>20</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>10</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>5</td>
+						<td>0</td>
+					</tr>
+					<tr>
+						<td>1</td>
+						<td>0</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+    </main>
+
+    <footer>
+      <a href="https://himadrishah.tech" target="_blank">Himadri Shah</a>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
