@@ -37,7 +37,7 @@ calculateBtn.addEventListener('click', (e) => {
     let cashInput = document.querySelector("#cash");
     let billInput = document.querySelector("#bill");
 
-    if( cashInput.value === ''  || cashInput.value <= 0 ) {
+    if( cashInput.value === ''  || cashInput.value <= 0  || billInput.value === '' || billInput.value <= 0 ) {
         errorDiv.innerText = 'Error: Please enter the value appropriately.';
 
         amountDiv.classList.add('hidden');
