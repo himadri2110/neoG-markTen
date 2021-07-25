@@ -40,13 +40,14 @@ calculateBtn.addEventListener('click', (e) => {
     let cashInput = document.querySelector("#cash");
     let billInput = document.querySelector("#bill");
 
+    countArray = countArray.map(num => 0);
+    showOutput();
+
     if( cashInput.value === ''  || cashInput.value <= 0  || billInput.value === '' || billInput.value <= 0 ) {
         errorDiv.innerText = 'Error: Please enter the value appropriately.';
 
         amountDiv.classList.add('hidden');
         
-        countArray = countArray.map(num => 0);
-        showOutput();
     } else {
         bill = parseInt(billInput.value);
         cash = parseInt(cashInput.value);
